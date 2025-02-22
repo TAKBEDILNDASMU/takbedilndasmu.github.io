@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <!--Reset css default style -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <!--Main css file-->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="navbar" aria-label="Main navigation">
+
+      <!--Left Section-->
+      <div class="navbar-logo">
+        <a href="#" class="logo-link">
+          <img class="logo" src="assets/img/logo.png" alt="logo titan" class="logo">
+        </a>
+      </div>
+
+      <!--Center Section-->
+      <ul class="nav-list" role="list">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <!--Right Section-->
+      <div class="social-links" aria-label="Social media links">
+        <a class="social-link" href="https://github.com/TAKBEDILNDASMU">
+          <img class="social-icon" src="assets/img/github.png" alt="Github Profile" class="social-icon">
+        </a>
+        <a class="social-link" href="https://www.linkedin.com/in/titan-apriliyan-73046623b/">
+          <img class="social-icon" src="assets/img/linkedin.png" alt="LinkedIn Profile" class="social-icon">
+        </a>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+    <!--Hero Section-->
+    <section id="home" class="hero" aria-label="Hero Section">
+
+      <!--Left Side-->
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-heading">
+            I'M <span class="hero-name">Titan Apriliyan</span>
+          </h1>
+          <div class="hero-roles">
+            <p class="hero-description">
+              <span class="role" id="typing-role"></span>
+            </p>
+          </div>
+          <a href="#contact" class="cta-button" aria-label="Contact Titan Apriliyan">
+            Contact Me
+          </a>
+        </div>
+      </div>
+
+      <!--Right Side-->
+      <aside class="hero-image-wrapper">
+        <img class="hero-image" class="hero-image" src="assets/img/hero.png"
+          alt="Professional Portrait of Titan Apriliyan">
+      </aside>
+    </section>
+
+    <!--Shadow for the most bottom of the section-->
+    <div class="shadow"></div>
+
+    <!--About Section-->
+    <section id="about" class="about" aria-label="About Section">
+      <!--About Header-->
+      <div class="about-header">
+        <h2 class="about-title">About</h2>
+      </div>
+
+      <!--About Content-->
+      <div class="about-content">
+        <div class="decorative-line" aria-hidden="true"></div>
+        <div class="about-text-container">
+          <p class="about-text">
+            I am a computer science student in my sixth semester, specializing in <span class="highlight">full-stack web
+              development</span> and <span class="highlight">UI/UX</span>
+            design. Currently, I focus on building dynamic web applications while maintaining an organized and clean
+            work
+            environment. My goal is to become a senior software developer, combining technical expertise with effective
+            communication to deliver user-centric solutions
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!--Skills Section-->
+    <section id="skill" class="skills" aria-label="Skills Section">
+
+      <!-- Skills Header -->
+      <div class="skills-header">
+        <h2 class="skills-title">My Skills</h2>
+      </div>
+
+      <!--Skills Cards-->
+      <div class="skills-wrapper" id="skills-card">
+        <!--This section will be displayed by DOM-->
+      </div>
+
+    </section>
+
+    <!--Portfolio Section-->
+    <section id="portfolio" class="portfolio" aria-label="Portfolio Section">
+
+      <!--Decoration -->
+      <div class="decoration-grid" aria-hidden="true">
+        <img src="assets/img/dot-grid.png">
+      </div>
+
+      <!--Portfolio Header  -->
+      <div class="portfolio-header">
+        <h2 class="portfolio-title">Portfolio</h2>
+      </div>
+
+      <!--Portfolio List-->
+      <div class="portfolio-list">
+        <div class="portfolio-wrapper">
+          <article class="portfolio-project">
+            <img class="portfolio-img" src="assets/img/jabung.png" alt="portfolio desa jabung">
+            <div class="portfolio-desc">
+              <p class="portfolio-text">
+                A website for village Jabung agency
+              </p>
+              <a href="https://desajabung.my.id" target="_blank" class="portfolio-link">
+                visit website
+              </a>
+            </div>
+          </article>
+          <article class="portfolio-project">
+            <img class="portfolio-img" src="assets/img/wringinanom.png" alt="portfolio desa wringinanom">
+            <div class="portfolio-desc">
+              <p class="portfolio-text">
+                A website for Village Wringinanom agency
+              </p>
+              <a href="https://sincarebunch.my.id" target="_blank" class="portfolio-link">
+                visit website
+              </a>
+            </div>
+          </article>
+          <article class="portfolio-project">
+            <img class="portfolio-img" src="assets/img/titan-portfolio.png" alt="portfolio titan">
+            <div class="portfolio-desc">
+              <p class="portfolio-text">
+                My personal website
+              </p>
+              <a href="https://heroic-piroshki-0504fc.netlify.app/?fbclid=PAZXh0bgNhZW0CMTEAAaZXdw-GAOhn2tCkS7gNWd6W3paIdqG8fz2ulZTiYY7v8Ump8fkBdzwIJmM_aem_WGFUutcTzXzLmzmcE45KWg"
+                target="_blank" class="portfolio-link">
+                visit website
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </section>
+
+    <!--Contact Me Section-->
+    <section class="contact" id="contact">
+
+      <!--Contact Decoration Top-->
+      <div class="contact-decoration-top-left"></div>
+      <div class="contact-decoration-top-right"></div>
+
+      <div class="contact-wrapper">
+
+        <!--Contact Header-->
+        <div class="contact-header">
+          <h2 class="contact-title">Contact Me</h2>
+        </div>
+
+        <!--Contact Info-->
+        <div class="contact-info">
+          <a href="mailto:titanaprilian73@gmail.com" target="_blank" class="contact-box">
+            <img src="assets/img/email.png" alt="email icon" class="contact-icon">
+            <span class="contact-text">titanaprilian73@gmail.com</span>
+          </a>
+          <a href="https://wa.me/6283848227047" target="_blank" class="contact-box">
+            <img src="assets/img/whatsapp.png" alt="whatsapp icon" class="contact-icon">
+            <span class="contact-text">083848227047</span>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Ponorogo,+Jawa+Timur" target="_blank"
+            class="contact-box">
+            <img src="assets/img/location.png" alt="location icon" class="contact-icon">
+            <span class="contact-text">Ponorogo, Jawa Timur</span>
+          </a>
+        </div>
+      </div>
+
+      <!--Social Icon-->
+      <div class="social-links-contact" aria-label="Social media links">
+        <a class="social-link" href="https://github.com/TAKBEDILNDASMU">
+          <img class="social-icon" src="assets/img/github.png" alt="Github Profile" class="social-icon">
+        </a>
+        <a class="social-link" href="https://www.linkedin.com/in/titan-apriliyan-73046623b/">
+          <img class="social-icon" src="assets/img/linkedin.png" alt="LinkedIn Profile" class="social-icon">
+        </a>
+      </div>
+
+      <!--Contact Decoration Bottom-->
+      <div class="contact-decoration-bottom-left"></div>
+      <div class="contact-decoration-bottom-right"></div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <h2 class="footer-title">"Thanks for Scrolling"</h2>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/typing.js"></script>
+</body>
+
+</html>
