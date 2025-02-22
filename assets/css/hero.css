@@ -1,0 +1,134 @@
+/* Hero Section Style */
+.hero {
+  width: var(--width-desktop);
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Hero Content Style */
+.hero-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-text {
+  max-width: 500px;
+  font-family: var(--font-secondary);
+}
+
+.hero-heading {
+  color: var(--color-text-100);
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-3xl);
+}
+
+.hero-name {
+  margin-left: 0.4rem;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-4xl);
+}
+
+.hero-roles {
+  color: var(--color-text-100);
+  font-size: var(--font-size-2xl);
+}
+
+.hero-description {
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+  line-height: 1.3;
+}
+
+.cta-button {
+  display: inline-block;
+  font-size: var(--font-size-lg);
+  padding: 0.5rem 1.6rem;
+  border-radius: var(--radius-md);
+  border: 3px solid var(--color-text-secondary);
+  color: var(--color-text-secondary);
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Option 1: Fill effect with color shift */
+.cta-button:hover {
+  background: var(--color-text-secondary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(178, 122, 230, 0.3);
+}
+
+/* Hero Image Style */
+.hero-image-wrapper {
+  flex: 1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 45rem;
+  overflow: hidden;
+  z-index: -999;
+}
+
+.hero-image {
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+
+/*style for shadow line*/
+.shadow {
+  position: relative;
+  width: 100%;
+}
+
+.shadow::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-heading {
+    font-size: var(--font-size-xl);
+  }
+
+  .hero-name {
+    font-size: var(--font-size-3xl);
+  }
+
+  .hero-roles {
+    font-size: var(--font-size-xl);
+  }
+
+  .hero-image-wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .hero-image {
+    opacity: 0.2;
+  }
+
+  .decorative-line {
+    display: none;
+  }
+}

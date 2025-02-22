@@ -1,0 +1,24 @@
+/* Footer Section Style */
+.footer {
+  padding: 6rem 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-title {
+  color: var(--color-text-secondary);
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-2xl);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 4rem;
+  }
+
+  .footer-title {
+    font-size: var(--font-size-lg);
+  }
+}

@@ -1,1 +1,64 @@
+/* About Section Style */
+.about {
+  width: var(--width-desktop);
+  margin: 0 auto;
+  padding: var(--padding-desktop);
+}
 
+.about-header {
+  margin-bottom: 0.7rem;
+}
+
+.about-title {
+  font-size: var(--font-size-3xl);
+  color: var(--color-text-100);
+  font-family: var(--font-secondary);
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.decorative-line {
+  position: relative;
+  width: 8em;
+  height: 3px;
+}
+
+.decorative-line::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  top: 12px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-text-secondary);
+}
+
+.about-text-container {
+  max-width: 1600px;
+}
+
+.about-text {
+  color: var(--color-text-100);
+  font-size: var(--font-size-xl);
+}
+
+.highlight {
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+    font-size: var(--font-size-lg);
+  }
+}
