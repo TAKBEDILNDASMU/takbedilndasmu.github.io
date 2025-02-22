@@ -19,7 +19,7 @@ Welcome to my personal portfolio website! This is a simple yet stylish website b
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/your-portfolio.git
+   git clone https://github.com/takbedilndasmu/takbedilndasmu.github.io.git
    ```
 2. Open `index.html` in a web browser.
 
